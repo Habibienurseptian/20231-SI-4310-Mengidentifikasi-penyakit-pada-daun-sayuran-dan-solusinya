@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waduh.com</title>
+
+    <!--Style css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Piedra&family=Poppins:ital,wght@0,700;1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!--Navbar start-->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Green<span>Plant</span></a>
+
+        <div class="navbar-nav">
+            <a href="">Beranda</a>
+            <a href="">Market</a>
+            <a href="">Chat</a>
+            <a href="">Pengaturan</a>
+        </div>
+
+        <div class="navbar-ekstra">
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Content-->
+    <section class="content">
+        <main class="content-body">
+            <h2><span>Green<span >Plant</span></span> cocok untuk berkebun</h2>
+            <h1>Website untuk mencari tau </h1>
+            <h1>penyakit pada daun sayuran</h1>
+            <p>Semua orang bisa memakai website ini untuk mencari tau</p>
+            <p>penyakit pada daun sayuran tentunya mudah dan sederhana.</p>
+            <p>Kalian tinggal mengupload foto daun sayuran yang terkena</p>
+            <p>penyakit kemudian kirim lalu website ini akan otomatis </p>
+            <p>memberikan solusinya dan juga disini kalian bisa</p>
+            <p>berkonsultasi langsung dengan para ahlinya lhoo....</p>
+            <a href="#" class="btn">Login</a>
+
+            <img class="gmbr1" src="kubis.jpg">
+        </main>
+    </section>
+    <section class="content2">
+        <main class="content-body2">
+            <h1>Bagaimana sih sayuran yang sehat itu?</h1>
+
+            <img class="gmbr2" src="2.jpg">
+
+            <h2>Sayuran yang sehat memiliki <br> ciri-ciri sebagi berikut:</h2>
+            <a href="#" class="btn2">View Site</a>
+        </main>
+    </section>
+    <!--Content End-->
+
+    <!--Footer Start-->
+    <footer>
+        <div class="footer-name">
+            <p> &copy; copyright</p>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
