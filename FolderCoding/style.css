@@ -1,0 +1,245 @@
+:root {
+    --primary: #097226;
+    --bg: rgb(96, 241, 96);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Piedra', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #6B6969;
+    color: white;
+    max-height: max-content;
+}
+
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 1.4rem 7%;
+    background-color: #1E1E1E;
+    position: fixed;
+    border-bottom: #6B6969;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Piedra', cursive;
+    font-style: regular;
+    margin-right: auto;
+}
+
+.navbar .navbar-logo span {
+    color: white;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    padding: 10px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-ekstra a {
+    color: white;
+    margin: 0 0.5rem;
+    padding: 2px;
+}
+
+.navbar .navbar-ekstra a:hover {
+    color: var(--primary);
+}
+
+#menu {
+    display: none;
+}
+
+
+/*Content*/
+
+.content {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.content .content-body h2 {
+    font-family: 'kanit', sans-serif;
+    font-style: regular;
+}
+
+.content .content-body h2 span {
+    color: var(--primary);
+    font-family: 'Piedra', cursive;
+    font-style: regular;
+}
+
+.content .content-body h2 span span {
+    color: white;
+    font-family: 'Piedra', cursive;
+    font-style: regular;
+}
+
+.content .content-body h1 {
+    font-family: 'kanit', sans-serif;
+    font-style: SemiBold;
+    font-size: 40px;
+}
+
+.content .content-body p {
+    font-family: 'roboto', sans-serif;
+    font-style: regular;
+    font-size: 16px;
+    padding-top: 1px;
+}
+
+.content .content-body .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    background-color: #097226;
+    color: white;
+}
+
+.content .content-body .gmbr1 {
+    border-radius: 200px;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    margin-left: 628px;
+    margin-bottom: 376px;
+    align-items: end;
+}
+
+.content2 {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.content2 .content-body2 h1 {
+    font-family: 'kanit', sans-serif;
+    font-style: SemiBold;
+    font-size: 40px;
+}
+
+.content2 .content-body2 .gmbr2 {
+    border-radius: 200px;
+    position: absolute;
+    width: 700px;
+    height: 470px;
+    margin-top: 50px;
+}
+
+.content2 .content-body2 h2 {
+    font-family: 'kanit', sans-serif;
+    font-style: regular;
+    margin-left: 777px;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.content2 .content-body2 .btn2 {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    background-color: #097226;
+    color: white;
+    margin-left: 1134px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    height: 100px;
+    padding: 1rem 0;
+    margin-top: 15rem;
+    color: black;
+}
+
+
+/*Media Queries*/
+
+
+/*Laptop*/
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+/*Tablet*/
+
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 30rem;
+        height: 100vh;
+    }
+    .navbar .navbar-nav .active {
+        right: 0;
+    }
+}
+
+
+/*Mobile Phone*/
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
